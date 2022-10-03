@@ -1,0 +1,519 @@
+/*  This file contains all the CSS for all of the files.
+*/
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#title {
+  color: #a85d36;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 1vh;
+  margin: auto;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#howtoplay {
+  font-size: 35px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+}
+
+#ins1 {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 20%;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 5vh;
+}
+
+#ins2 {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 21%;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+}
+
+#ins3 {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 22%;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 15vh;
+}
+#album {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  width: 300px;
+  padding: 10px;
+  border: 1px;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#album_select {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 300px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 6vh;
+}
+
+#album_button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 11px 32px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 6vh;
+}
+
+#album_button:hover{
+  animation: 2s ease-out 0s 1 fade
+}
+@keyframes fade{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:#ECECEC;
+  }
+  100%{
+    background-color:#ECECEC;
+  }
+}
+
+#showalbum{
+  color: #cdc6ac;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 0vh;
+}
+
+#lyrictitle {
+  color:#816477;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 0vh;
+}
+
+#lyric {
+  color:#816477;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 0vh;
+}
+
+#guessbox {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 20%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  margin: 8px 8px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+#guessenter {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 11px 32px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#guessenter:hover{
+  animation: 2s ease-out 0s 1 fade
+}
+@keyframes fade{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:#ECECEC;
+  }
+  100%{
+    background-color:#ECECEC;
+  }
+}
+
+#giveup{
+  background-color: white;
+  border: 1px solid black;
+  color: red;
+  padding: 15px 15px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 41%;
+  left: 75%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#giveup:hover{
+  animation: 2s ease-out 0s 1 fade
+}
+@keyframes fade{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:#ECECEC;
+  }
+  100%{
+    background-color:#ECECEC;
+  }
+}
+
+#playagain{
+  background-color: white;
+  border: 1px solid black;
+  color: green;
+  padding: 10px 10px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#playagain:hover{
+  animation: 2s ease-out 0s 1 fade
+}
+@keyframes fade{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:#ECECEC;
+  }
+  100%{
+    background-color:#ECECEC;
+  }
+}
+
+#finishgame{
+  background-color: white;
+  border: 1px solid black;
+  color: red;
+  padding: 10px 10px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#finishgame:hover{
+  animation: 2s ease-out 0s 1 fade
+}
+@keyframes fade{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:#ECECEC;
+  }
+  100%{
+    background-color:#ECECEC;
+  }
+}
+
+#prevguess{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#showsong {
+  color:#816477;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#result {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#gamesummary {
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#stat1{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#stat2{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#stat3{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 20px 20px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home:hover{
+  animation: 2s ease-out 0s 1 fade
+}
+@keyframes fade{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:grey;
+  }
+  100%{
+    background-color:grey;
+  }
+}
