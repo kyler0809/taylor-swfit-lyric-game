@@ -1,3 +1,5 @@
+Taylor Swift Lyric Game
+
 Additional Information on running the program:
 Before running the program, use npm install to install the following packages in the server folder: cors, express, axios.
 Then, use npm install to install the following package in the lyric-game folder: react-router-dom
